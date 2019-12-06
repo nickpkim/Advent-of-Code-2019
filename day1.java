@@ -102,13 +102,17 @@ public class day1{
                 108534,
                 66362,
                 126340,
-                143660)
+                143660);
         int fuelSum = 0;
         for (int i=0; i<massList.size(); i++){
             addFuel(massList.get(i));
         }
-        public void addFuel(int mass){
-            fuelSum += ((int)(mass/(3.0)))-2;
+        System.out.println(fuelSum);
+        public class AddFuel{
+            static void addFuel(int mass){
+                fuelSum += ((int)(mass/(3.0)))-2;
+            }
         }
+
     }
 }
