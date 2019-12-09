@@ -2,8 +2,7 @@ import java.util.*;
 import java.util.function.Supplier;
 public class day1{
     public static void main(String args[]){
-        List<Integer> massList = new ArrayList<Integer>();
-        list.add(120847,
+        List<long> massList = new ArrayList<Integer>(120847,
                 60347,
                 63340,
                 72773,
@@ -103,16 +102,15 @@ public class day1{
                 66362,
                 126340,
                 143660);
+        //massList.addAll();
         int fuelSum = 0;
         for (int i=0; i<massList.size(); i++){
-            addFuel(massList.get(i));
+           // addFuel(massList.get(i));
+            fuelSum += ((int)(massList.get(i))/(3.0))-2;
         }
         System.out.println(fuelSum);
-        public class AddFuel{
-            static void addFuel(int mass){
-                fuelSum += ((int)(mass/(3.0)))-2;
-            }
-        }
-
     }
+    //static void addFuel(int addingTo, int mass){
+     //   int fuelToAdd += ((int)(mass/(3.0)))-2;
+    //}
 }
